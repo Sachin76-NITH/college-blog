@@ -15,6 +15,7 @@ const determineImageFileType = (imageBase64) => {
 
 // Controller to handle creating a new tweet
 exports.createTweet = async (req, res) => {
+  console.log("nhiiiioooo");
   try {
     const { text, imageBase64 } = req.body;
 
@@ -58,6 +59,7 @@ exports.createTweet = async (req, res) => {
 
 // Controller to handle fetching all tweets
 exports.getAllTweets = async (req, res) => {
+  console.log("nhiiiioooo");
   try {
     const tweets = await Tweet.find().sort({ createdAt: -1 });
 
