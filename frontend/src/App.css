@@ -1,0 +1,270 @@
+.App{
+  display: flex;
+  /* background-size: cover;
+  background-image: url("https://wallpapercave.com/wp/wp6988889.jpg"); */
+  height: 100%;
+}
+
+.sachin{
+  display: flex;
+  flex: 1;
+  height: 100vh;
+}
+
+.sidebar{
+  display: flex;
+  flex-direction: column;
+  flex: 0.2;
+  /* align-items: flex-start; */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  /* background-color: aliceblue; */
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  height: 90VH;
+  width: 20VW;
+  border-radius: 5px;
+  background-color: snow; */
+  /* height: 90vh; */
+  /* background-color: aliceblue; */
+  /* justify-content: center; */
+  height: 100%;
+  
+}
+
+.ps{
+
+display: flex;
+
+/* align-items: center; */
+/* justify-content: center;  */
+height: 100px; 
+align-items: center;
+justify-content: center;
+
+background-color: rgba(0, 0, 0, 0);
+width: 100%;
+
+}
+.ss{
+  width: 100%;
+  height: 100vh;
+   display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center;
+
+}
+.text{
+  display: flex;
+  margin-left: 8px;
+ 
+  font-family:robot;
+
+}
+
+.tweetarea{
+flex: 0.6;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+margin-right: 10px;
+height: 100vh;
+overflow-y: auto;
+}
+
+.tweetarea::-webkit-scrollbar {
+  width: 0; /* hide scrollbar */
+}
+
+.imagefile{
+  margin: 2px;
+}
+/* styles.css */
+
+.tweets-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tweet-input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+  justify-content: center;
+  
+  /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; */
+  
+}
+
+.tweet-input {
+  width: 100%;
+  height: 15vh;
+  padding: 8px;
+  margin-bottom: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: none;
+  
+}
+
+.tweet-button {
+  background-color: #1da1f2;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 4px;
+}
+
+.tweet-list {
+ 
+  h2 {
+    height: 40px;
+    
+    font-size: 18px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:teal;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;   
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+ 
+
+    li { 
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 8px;
+      margin-bottom: 8px;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+  }
+}
+
+.tt{
+  border: 10px solid white;
+  margin: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+   font-family:sans-serif;
+   /* background-color: pink; */
+}
+
+.ext{
+  font-family:sans-serif;
+  margin: 10px;
+ 
+}
+
+/* Trending.css */
+
+.trending-container {
+  background-color: #f7f7f7;
+  padding: 16px;
+  border-radius: 8px;
+  margin-top: 40px;
+  display: flex;
+  flex: 0.2;
+margin-right: 50px;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+height: 50vh;
+width: 100%;
+justify-content: center;
+flex-direction: column;
+
+}
+
+.trending-heading {
+  color: #1da1f2;
+  font-size: 18px;
+  margin-bottom: 12px;
+  display: flex;
+  font-family: roboto;
+  
+}
+
+.trending-list {
+  list-style: none;
+  padding: 0;
+  margin: 1px;
+  display: flex;
+  flex-direction: column;
+ 
+  justify-content: center;
+}
+
+.trending-item {
+  display: flex;
+
+  background-color: #e6e6e6;
+  color: #333;
+  padding: 8px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  font-family: roboto;
+}
+
+.trending-item:hover {
+  background-color: #d4d4d4;
+}
+
+.lo{
+  display: flex;
+  width: 100%;
+  background-image: url("https://clipground.com/images/goku-ultra-instinct-png-9.jpg");
+
+  background-repeat: no-repeat;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.magma{
+  display: flex;
+  flex: 0.5;
+
+ 
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
+  /* background-color: aliceblue; */
+}
+
+.magma2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0.5;
+
+
+}
+
+.magma3{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.allusers{
+ 
+}
+
+.headu{
+ display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family:Work sans;
+  color:royalblue;
+}
+
+.u1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:teal;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: cursive;
+}
