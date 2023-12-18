@@ -30,6 +30,7 @@ app.use(express.urlencoded({limit: '25mb', extended: true}));
 
 
 // Routes
-app.use('/', tweetRoutes);
+
 app.use("/",authRoutes)
+app.use('/', tweetRoutes);
 
