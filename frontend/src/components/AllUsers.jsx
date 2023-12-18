@@ -10,7 +10,7 @@ function AllUsers() {
     // Fetch the list of users when the component mounts
     const fetchUsers = async () => {
       try {
-        const response = await axios.get('https://college-blog-seven.vercel.app/users'); // Update the URL with your backend URL
+        const response = await axios.get('https://college-blog-alpha.vercel.app/users'); // Update the URL with your backend URL
         setUsers(response.data);
       } catch (error) {
         console.error('Error fetching users:', error);

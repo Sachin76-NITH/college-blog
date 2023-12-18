@@ -9,7 +9,7 @@ const Tweets = () => {
   useEffect(() => {
     const fetchTweets = async () => {
       try {
-        const response = await axios.get('https://college-blog-seven.vercel.app/gettweets');
+        const response = await axios.get('https://college-blog-alpha.vercel.app/gettweets');
         if (response.status === 200) {
           setTweets(response.data);
         } else {
@@ -42,7 +42,7 @@ const Tweets = () => {
 
   const handleTweetSubmit = async () => {
     try {
-      const response = await axios.post('https://college-blog-seven.vercel.app/tweets', {
+      const response = await axios.post('https://college-blog-alpha.vercel.app/tweets', {
         text: tweetText,
         imageBase64: imageBase64,
       });
@@ -53,7 +53,7 @@ const Tweets = () => {
         setImageBase64('');
 
         // Fetch updated tweets after submitting
-        const tweetsResponse = await axios.get('https://college-blog-seven.vercel.app/gettweets');
+        const tweetsResponse = await axios.get('https://college-blog-alpha.vercel.app/gettweets');
         if (tweetsResponse.status === 200) {
           const updatedTweets = tweetsResponse.data;
           console.log('Fetched Tweets:', updatedTweets);
