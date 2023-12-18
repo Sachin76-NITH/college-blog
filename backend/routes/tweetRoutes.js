@@ -7,6 +7,6 @@ const router = express.Router();
 router.post('/tweets', tweetController.createTweet);
 
 // Route to fetch all tweets
-router.get('/tweets', tweetController.getAllTweets);
+router.get('/gettweets', tweetController.getAllTweets);
 
 module.exports = router;
