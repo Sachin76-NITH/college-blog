@@ -11,7 +11,7 @@ function Login() {
 
   const handleLogin = async () => {
     try {
-      const response = await axios.post("http://localhost:5050/Login", {
+      const response = await axios.post("https://college-blog-seven.vercel.app/Login", {
         email,
         password,
       });
