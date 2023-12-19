@@ -7,7 +7,7 @@ app.use(cors());
 const dotenv=require("dotenv");
 dotenv.config();
 
-const PORT=process.env.PORT|| 5050;
+const PORT=process.env.PORT|| 'https://college-blog-alpha.vercel.app';
 
 
 mongoose.connect(process.env.CONNECTION_URL)
