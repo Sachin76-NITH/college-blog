@@ -6,7 +6,8 @@ const cors=require("cors")
 app.use(cors());
 const dotenv=require("dotenv");
 dotenv.config();
-
+const authRoutes = require("./routes/AuthRoutes.js")
+const tweetRoutes = require("./routes/tweetRoutes.js")
 const PORT=process.env.PORT|| 5050;
 
 
@@ -18,8 +19,7 @@ mongoose.connect(process.env.CONNECTION_URL)
 
 // app.use(express.json({ limit: '10mb' }));
 
-const authRoutes = require("./routes/AuthRoutes.js")
-const tweetRoutes = require("./routes/tweetRoutes.js")
+
 
 
 
