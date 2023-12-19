@@ -2,7 +2,8 @@ const express=require("express");
 const app=express();
 const bodyParser = require('body-parser');
 const mongoose =require("mongoose")
-
+const cors=require("cors")
+app.use(cors());
 const dotenv=require("dotenv");
 dotenv.config();
 
@@ -13,8 +14,7 @@ mongoose.connect(process.env.CONNECTION_URL)
 .then(()=>app.listen(PORT,()=> console.log(`server is running on port :${PORT}`)))
 .catch((error)=>console.log(error.message));
 
-const cors=require("cors")
-app.use(cors());
+
 const tweetRoutes = require("./routes/tweetRoutes.js")
 app.use(express.json({ limit: '10mb' }));
 app.use(bodyParser.json());
