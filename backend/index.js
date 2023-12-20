@@ -3,7 +3,7 @@ const app=express();
 const bodyParser = require('body-parser');
 const mongoose =require("mongoose")
 const cors=require("cors")
-app.use(cors());
+
 const dotenv=require("dotenv");
 dotenv.config();
 const authRoutes = require("./routes/AuthRoutes.js")
@@ -24,8 +24,9 @@ mongoose.connect(process.env.CONNECTION_URL)
 
 
 app.use(express.json())
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded());
+app.use(bodyParser.json({limit: "50mb"}));
+app.use(bodyParser.urlencoded({limit: "50mb", extended: true, parameterLimit:50000}));
+app.use(cors());
 // app.use(express.json({limit: '25mb'}));
 // app.use(express.urlencoded({limit: '25mb', extended: true}));
 
